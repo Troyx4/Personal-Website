@@ -1,10 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 @font-face {
   font-family: 'Round8Four'; /* The custom name you'll use to reference the font */
   src: url('./src/assets/fonts/ROUND 8-FOUR/Webfont/Web Font Kit/round8-four-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
 
 .Front-Page{
   display: flex;
@@ -16,17 +19,19 @@
   
   
 }
-.first-div{
-  display: flex;
-
-}
 
 html,
 body {
   margin: 0;
 
 }
+.name{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0px;
 
+}
 
 .First,
 .Last{
@@ -36,22 +41,25 @@ body {
   
 }
 
-.First{
-  margin-bottom: 10px;
-  margin-left: -100px;
-}
 
-.Last{
-  margin-left: -70px;
-  margin-top: -50px;
-}
 
 .temp-div{
-  height: 40px;
+  height: 200px;
+  
 }
 
 .temp{
-  font-family: 'Round8Four', sans-serif;
-  font-size: 20px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  margin-left: 30px;
+  
 
+}
+
+.Last{
+  margin-top: -50px;
+}
+
+.First{
+  margin-bottom: 0px;
 }
