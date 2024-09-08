@@ -1,12 +1,29 @@
-import { FrontPage } from "../Components/Front-Page";
+import React from "react";
 import { Weather } from "../Components/Weather";
+import { Name } from "../Components/Name";
+import { Computer } from "../Components/Computer";
+import { OrbitControls, Stage } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+
 
 
  function App(){
   return(<>
-   <div className="Front-Page"> 
+   <div className="Parent-Front-Page"> 
     <Weather></Weather> 
-    <FrontPage></FrontPage>
+    <div className="Name-Model-Div">
+    <Name></Name>
+    <Canvas>
+      <Stage>
+        <OrbitControls></OrbitControls>
+        <Computer></Computer>
+      </Stage>
+
+    </Canvas>
+    </div>
+    
+    
+    
 
   </div>
    
