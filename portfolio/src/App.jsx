@@ -4,6 +4,7 @@ import { Name } from "../Components/Name";
 import { Computer } from "../Components/Computer";
 import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
 
 
 
@@ -13,18 +14,16 @@ import { Canvas } from "@react-three/fiber";
     <Weather></Weather> 
     <div className="Name-Model-Div">
     <Name></Name>
-    <Canvas>
+    <Suspense fallback={<div className="Fall-Back">Loading...</div>}>
+    <Canvas >
+      
       <Stage>
         <OrbitControls></OrbitControls>
         <Computer></Computer>
       </Stage>
-
     </Canvas>
+    </Suspense>
     </div>
-    
-    
-    
-
   </div>
    
     </>
