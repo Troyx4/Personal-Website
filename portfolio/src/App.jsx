@@ -25,6 +25,10 @@ import { Suspense } from "react";
     </Suspense>
     </div>
   </div>
+  <div className="Student-Eats-Div">
+
+
+  </div>
    
     </>
   )
