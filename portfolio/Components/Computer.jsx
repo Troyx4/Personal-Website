@@ -11,7 +11,7 @@ export function Computer(props) {
   // Use the useFrame hook to rotate the model on every frame
   useFrame(() => {
     if (groupRef.current) {
-      groupRef.current.rotation.y += 0.005; // Adjust this value to change the speed of rotation
+      groupRef.current.rotation.y += 0.00005; // Adjust this value to change the speed of rotation
     }
   });
 
@@ -21,8 +21,10 @@ export function Computer(props) {
         geometry={nodes.retro_computer_setup_retro_computer_setup_Mat_0.geometry}
         material={materials.retro_computer_setup_Mat}
         rotation={[-Math.PI / 2, 0, 0]}
+        scale={0.01}
+
       />
-      <ambientLight />
+     
     </group>
   );
 }

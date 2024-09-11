@@ -62,10 +62,13 @@ body {
 
 
 .Name-Model-Div{
+  margin-top: -40px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 500px;
+  gap: 400px;
+  margin-right: 100px;
+  padding: 10px;
 }
 
 .Fall-Back{
@@ -75,11 +78,25 @@ body {
 
 
 }
+.Introduction{
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
 
-
+}
 
 .Student-Eats-Div{
-  height: 400px;
-  width: 100vw;
-  background-color: #f7f5ec;
+  display: flex;
+}
+
+
+
+.intro-text{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  margin-left: 110px;
+  font-size: 20px;
+
+
 }

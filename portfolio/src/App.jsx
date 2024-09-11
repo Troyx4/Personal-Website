@@ -5,9 +5,7 @@ import { Computer } from "../Components/Computer";
 import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
-
-
-
+import { PerspectiveCamera } from "@react-three/drei";
  function App(){
   return(<>
    <div className="Parent-Front-Page"> 
@@ -15,20 +13,29 @@ import { Suspense } from "react";
     <div className="Name-Model-Div">
     <Name></Name>
     <Suspense fallback={<div className="Fall-Back">Loading...</div>}>
-    <Canvas >
-      
-      <Stage>
-        <OrbitControls></OrbitControls>
-        <Computer></Computer>
-      </Stage>
-    </Canvas>
-    </Suspense>
+  <Canvas style={{ overflow: "hidden" }}>
+    <PerspectiveCamera
+      makeDefault
+      position={[0, 0, 10000]} // Move the camera back by setting Z position (increase this number to zoom out)
+      fov={70} // Adjust field of view (lower values will zoom in, higher values will zoom out)
+    />
+    <OrbitControls />
+    <Stage>
+      <Computer />
+    </Stage>
+  </Canvas>
+</Suspense>
+
     </div>
-  </div>
-  <div className="Student-Eats-Div">
+    <div className="Introduction">
 
+    <button className="Projects-Button">Projects</button>     
 
+    </div>
+    
   </div>
+ 
+
    
     </>
   )
