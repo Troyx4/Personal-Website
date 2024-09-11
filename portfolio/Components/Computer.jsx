@@ -22,6 +22,7 @@ export function Computer(props) {
         material={materials.retro_computer_setup_Mat}
         rotation={[-Math.PI / 2, 0, 0]}
         scale={0.01}
+        castShadow = {false}
 
       />
      
