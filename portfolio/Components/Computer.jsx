@@ -3,7 +3,7 @@ import { useGLTF } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
 export function Computer(props) {
-  const { nodes, materials } = useGLTF('src/assets/models/scene.gltf');
+  const { nodes, materials } = useGLTF('/models/scene.gltf');
   
   // Create a reference to the group containing the model
   const groupRef = useRef();
@@ -30,4 +30,4 @@ export function Computer(props) {
   );
 }
 
-useGLTF.preload('src/assets/models/scene.gltf');
+useGLTF.preload('/models/scene.gltf');

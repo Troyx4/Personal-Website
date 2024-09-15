@@ -7,6 +7,7 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { PerspectiveCamera } from "@react-three/drei";
 import { Center } from "@react-three/drei";
+import { HomepageButtons } from "../Components/HomepageButtons";
  function App(){
   return(<>
    <div className="Parent-Front-Page"> 
@@ -30,12 +31,9 @@ import { Center } from "@react-three/drei";
 </Suspense>
 
     </div>
-    <div className="Introduction">
-
-    <button className="Projects-Button">Projects</button>     
-
-    </div>
-    
+    <HomepageButtons/>
+  
+  
   </div>
  
 
