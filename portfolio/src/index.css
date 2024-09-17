@@ -119,3 +119,40 @@ body {
   cursor: pointer;
 
 }
+
+.StudentEatsLogo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+.Portfolio-Text{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.Project-Container{
+  display: flex;
+  gap: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Portfolio-div{
+  display: flex;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #e2dec2;
+  cursor: pointer;
+  text-decoration: none;
+}
+.Portfolio-Text{
+  text-decoration: none ;
+  
+  color: black;
+  
+}

@@ -1,4 +1,4 @@
-
+import { Projects } from "../Components/Projects";
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import {
@@ -14,6 +14,11 @@ const router = createBrowserRouter([
     path: "/",
     element: <App></App>
   },
+  {
+    path: `/projects/1`,
+    element : <Projects></Projects>
+  }
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
