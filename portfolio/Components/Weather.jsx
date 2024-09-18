@@ -54,13 +54,18 @@ export function Weather() {
   return (
     <div className="temp-div">
       {error ? (
+        
         <p className="temp error">{error}</p> // Show error message if fetch fails
       ) : Temp !== null ? (
-        <p className="temp">London Temperature: {Temp}°C</p>
+        <div className="t">
+        <p className="temp">London : {Temp}°C</p>
+        </div>
        
       ) : (
         <p className="temp">Loading...</p> // Show loading state until temperature is fetched
       )}
+      
+     
     </div>
   );
 }

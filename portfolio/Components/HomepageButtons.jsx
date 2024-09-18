@@ -7,7 +7,7 @@ export function HomepageButtons(){
     <button className="Projects-Button">Projects</button>     
     </Link>
     <a href="Resume/_Resume.docx.pdf"><button className="Projects-Button">Resume</button></a>
-    <button className="Projects-Button">Contact</button> 
+    <a href='https://linktr.ee/TroyMuyobo'><button className="Projects-Button">Contact</button> </a>
 
     </div>
   )

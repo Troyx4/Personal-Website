@@ -12,6 +12,7 @@ import { HomepageButtons } from "../Components/HomepageButtons";
   return(<>
    <div className="Parent-Front-Page"> 
     <Weather></Weather> 
+    
     <div className="Name-Model-Div">
     <Name></Name>
     <Suspense fallback={<div className="Fall-Back">Loading...</div>}>
@@ -33,6 +34,11 @@ import { HomepageButtons } from "../Components/HomepageButtons";
     </div>
     <HomepageButtons/>
   
+    <div><p className="temp"> author:	Brandon Westlake (https://sketchfab.com/dr.badass2142)</p></div>
+  </div>
+  
+
+  <div>
   
   </div>
  

@@ -27,6 +27,11 @@ body {
 .temp-div{
   height: 100px;
   width: 500px; 
+  display: flex;
+  gap:300px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  
   
 }
 
@@ -156,3 +161,4 @@ body {
   color: black;
   
 }
+
