@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'Round8Four'; /* The custom name you'll use to reference the font */
-  src: url('./src/assets/fonts/ROUND 8-FOUR/Webfont/Web Font Kit/round8-four-webfont.woff') format('woff');
+  src: url('/fonts/ROUND 8-FOUR/Webfont/Web Font Kit/round8-four-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
