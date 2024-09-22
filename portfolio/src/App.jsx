@@ -16,7 +16,7 @@ import { HomepageButtons } from "../Components/HomepageButtons";
     <div className="Name-Model-Div">
     <Name></Name>
     <Suspense fallback={<div className="Fall-Back">Loading...</div>}>
-  <Canvas style={{ overflow: "hidden" ,}}>
+  <Canvas style={{ overflow: "hidden" , cursor: "pointer"}}>
     <PerspectiveCamera
       makeDefault
       position={[0, 1, 100000]} // Move the camera back by setting Z position (increase this number to zoom out)
@@ -33,8 +33,8 @@ import { HomepageButtons } from "../Components/HomepageButtons";
 
     </div>
     <HomepageButtons/>
-  
-    <div><p className="temp"> author:	Brandon Westlake (https://sketchfab.com/dr.badass2142)</p></div>
+      
+    <div className="Credits"><p className="temp"> author:	Brandon Westlake (https://sketchfab.com/dr.badass2142)</p></div>
   </div>
   
 
